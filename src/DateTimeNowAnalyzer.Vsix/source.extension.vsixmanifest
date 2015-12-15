@@ -5,7 +5,7 @@
     <DisplayName>DateTimeNowAnalyzer</DisplayName>
     <Description xml:space="preserve">Finds usages of DateTime.Now, DateTime.UtcNow, DateTimeOffset.Now, DateTimeOffset.UtcNow and marks them as error.</Description>
     <MoreInfo>https://github.com/mihasic/DateTimeNowAnalyzer</MoreInfo>
-    <License>LICENSE</License>
+    <License>eula.txt</License>
     <Tags>DateTime,analyzer</Tags>
   </Metadata>
   <Installation>
