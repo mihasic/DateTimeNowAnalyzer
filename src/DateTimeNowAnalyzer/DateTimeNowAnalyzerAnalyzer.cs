@@ -43,19 +43,20 @@ namespace DateTimeNowAnalyzer
         {
             // https://github.com/dotnet/roslyn/blob/master/docs/analyzers/Analyzer%20Actions%20Semantics.md
             context.RegisterSyntaxNodeAction(AnalyzeSyntaxNode, SyntaxKind.SimpleMemberAccessExpression);
+            context.RegisterSyntaxNodeAction(AnalyzeSyntaxNode, SyntaxKind.IdentifierName);
         }
 
         private void AnalyzeSyntaxNode(SyntaxNodeAnalysisContext context)
         {
-            var memberAccessExpr = (MemberAccessExpressionSyntax) context.Node;
-            var name = memberAccessExpr.Name.ToString();
+            var name = (context.Node as MemberAccessExpressionSyntax)?.Name.ToString() ??
+                       (context.Node as IdentifierNameSyntax)?.Identifier.ValueText;
             if (name == "Now" || name == "UtcNow")
             {
-                var symbol = context.SemanticModel.GetSymbolInfo(memberAccessExpr).Symbol as IPropertySymbol;
+                var symbol = context.SemanticModel.GetSymbolInfo(context.Node).Symbol as IPropertySymbol;
                 var symbolText = symbol?.ToString();
                 if (InvalidTokens.Contains(symbolText))
                 {
-                    var diagnostic = Diagnostic.Create(Rule, memberAccessExpr.GetLocation(), Description);
+                    var diagnostic = Diagnostic.Create(Rule, context.Node.GetLocation(), Description);
                     context.ReportDiagnostic(diagnostic);
                 }
             }
