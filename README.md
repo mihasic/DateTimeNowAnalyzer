@@ -4,7 +4,7 @@
 
 Simple Analyzer for DateTime.Now, DateTime.UtcNow, DateTimeOffset.Now, DateTimeOffset.UtcNow.
 
-Each of those static methods can lead to side-effects, that's why best practice is to have a top level abstraction for the project. This, for eample, would allow to write unit tests with predictable results, without the need to deal with time accuracy.
+Each of those static methods can lead to side-effects, that's why best practice is to have a top level abstraction for the project. This, for example, would allow to write unit tests with predictable results, without the need to deal with time accuracy.
 
 DateTime.Now has way more issues than just being static mutable, but that's not really the goal of particular extension.
 
