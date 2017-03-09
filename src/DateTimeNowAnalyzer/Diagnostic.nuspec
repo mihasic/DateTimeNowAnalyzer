@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>DateTimeNowAnalyzer</id>
-    <version>1.0.0.1</version>
+    <version>1.2.0.0</version>
     <title>DateTimeNowAnalyzer</title>
     <authors>Mykhailo Rybnikov</authors>
     <owners>Mykhailo Rybnikov</owners>
@@ -11,7 +11,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>DateTimeNowAnalyzer</description>
     <releaseNotes>Initial release.</releaseNotes>
-    <copyright>(c) 2015 Mykhailo Rybnikov</copyright>
+    <copyright>(c) 2017 Mykhailo Rybnikov</copyright>
     <tags>DateTimeNowAnalyzer, analyzer</tags>
     <frameworkAssemblies>
       <frameworkAssembly assemblyName="System" targetFramework="" />

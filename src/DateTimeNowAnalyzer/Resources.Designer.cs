@@ -87,5 +87,14 @@ namespace DateTimeNowAnalyzer {
                 return ResourceManager.GetString("AnalyzerTitle", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Convert to DateTimeOffset.
+        /// </summary>
+        internal static string Convert2DateTimeOffset {
+            get {
+                return ResourceManager.GetString("Convert2DateTimeOffset", resourceCulture);
+            }
+        }
     }
 }
