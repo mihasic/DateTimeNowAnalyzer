@@ -4,14 +4,14 @@
     <id>DateTimeNowAnalyzer</id>
     <version>1.2.0.0</version>
     <title>DateTimeNowAnalyzer</title>
-    <authors>Mykhailo Rybnikov</authors>
-    <owners>Mykhailo Rybnikov</owners>
+    <authors>DateTimeNowAnalyzer contributors</authors>
+    <owners>DateTimeNowAnalyzer contributors</owners>
     <licenseUrl>https://github.com/mihasic/DateTimeNowAnalyzer/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/mihasic/DateTimeNowAnalyzer</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>DateTimeNowAnalyzer</description>
     <releaseNotes>Initial release.</releaseNotes>
-    <copyright>(c) 2017 Mykhailo Rybnikov</copyright>
+    <copyright>(c) 2018 DateTimeNowAnalyzer contributors</copyright>
     <tags>DateTimeNowAnalyzer, analyzer</tags>
     <frameworkAssemblies>
       <frameworkAssembly assemblyName="System" targetFramework="" />
