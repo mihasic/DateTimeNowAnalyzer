@@ -129,4 +129,7 @@
     <value>DateTime.Now should not be used.</value>
     <comment>The title of the diagnostic.</comment>
   </data>
+  <data name="Convert2DateTimeOffset" xml:space="preserve">
+    <value>Convert to DateTimeOffset</value>
+  </data>
 </root>
